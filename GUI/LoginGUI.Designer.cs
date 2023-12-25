@@ -62,15 +62,16 @@
             usernameTextbox.Name = "usernameTextbox";
             usernameTextbox.Size = new Size(492, 34);
             usernameTextbox.TabIndex = 2;
+            usernameTextbox.TextChanged += usernameTextbox_TextChanged;
             // 
             // passwordTextbox
             // 
             passwordTextbox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            passwordTextbox.Location = new Point(262, 220);
+            passwordTextbox.Location = new Point(262, 217);
             passwordTextbox.Name = "passwordTextbox";
-            passwordTextbox.PasswordChar = '*';
             passwordTextbox.Size = new Size(492, 34);
             passwordTextbox.TabIndex = 3;
+            passwordTextbox.TextChanged += passwordTextbox_TextChanged;
             // 
             // loginBtn
             // 
@@ -97,6 +98,7 @@
             Name = "LoginGUI";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng nhập";
+            Load += LoginGUI_Load;
             ResumeLayout(false);
             PerformLayout();
         }

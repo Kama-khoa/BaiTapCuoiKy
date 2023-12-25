@@ -505,24 +505,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Manh Hung\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\khoa6\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manh Hung\\Desktop\\UTT\\Project\\BaiTapCuoiKy\\BUS\\BUS.csproj",
+      "projectUniqueName": "D:\\C\\GitHub\\BaiTapCuoiKy\\BUS\\BUS.csproj",
       "projectName": "BUS",
-      "projectPath": "C:\\Users\\Manh Hung\\Desktop\\UTT\\Project\\BaiTapCuoiKy\\BUS\\BUS.csproj",
-      "packagesPath": "C:\\Users\\Manh Hung\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manh Hung\\Desktop\\UTT\\Project\\BaiTapCuoiKy\\BUS\\obj\\",
+      "projectPath": "D:\\C\\GitHub\\BaiTapCuoiKy\\BUS\\BUS.csproj",
+      "packagesPath": "C:\\Users\\khoa6\\.nuget\\packages\\",
+      "outputPath": "D:\\C\\GitHub\\BaiTapCuoiKy\\BUS\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Manh Hung\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\khoa6\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -536,11 +531,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Manh Hung\\Desktop\\UTT\\Project\\BaiTapCuoiKy\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Manh Hung\\Desktop\\UTT\\Project\\BaiTapCuoiKy\\DAL\\DAL.csproj"
+            "D:\\C\\GitHub\\BaiTapCuoiKy\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\C\\GitHub\\BaiTapCuoiKy\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Manh Hung\\Desktop\\UTT\\Project\\BaiTapCuoiKy\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\Manh Hung\\Desktop\\UTT\\Project\\BaiTapCuoiKy\\DTO\\DTO.csproj"
+            "D:\\C\\GitHub\\BaiTapCuoiKy\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\C\\GitHub\\BaiTapCuoiKy\\DTO\\DTO.csproj"
             }
           }
         }
@@ -565,12 +560,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

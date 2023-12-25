@@ -16,6 +16,9 @@
     <Compile Update="SellGUI_menu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ValidateMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WarehouseUI_menu.cs">
       <SubType>Form</SubType>
     </Compile>

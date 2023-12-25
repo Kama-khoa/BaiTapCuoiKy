@@ -1,102 +1,37 @@
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\GUI.exe
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\GUI.deps.json
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\GUI.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\GUI.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\BUS.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\DAL.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\DTO.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\DTO.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\BUS.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\bin\Debug\net7.0-windows\DAL.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.csproj.AssemblyReference.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.LoginGUI.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.csproj.GenerateResource.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfoInputs.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfo.cs
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.csproj.CoreCompileInputs.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.csproj.CopyComplete
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.AccGUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.ManagerGUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.SellGUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.CustomerSeviceUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\Laptop-Store\GUI\obj\Debug\net7.0-windows\GUI.WarehouseUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.exe
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.deps.json
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\BUS.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DAL.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DTO.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\BUS.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DTO.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DAL.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.AssemblyReference.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AccGUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.CustomerSeviceUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.LoginGUI.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.ManagerGUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.SellGUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.WarehouseUI_menu.resources
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.GenerateResource.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfoInputs.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfo.cs
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.CoreCompileInputs.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.CopyComplete
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.pdb
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
-<<<<<<< Updated upstream
-=======
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Manh Hung\Desktop\UTT\Project\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.exe
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.deps.json
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.pdb
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\BUS.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DAL.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DTO.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\BUS.pdb
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DTO.pdb
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DAL.pdb
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.AssemblyReference.cache
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AccGUI_menu.resources
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.CustomerSeviceUI_menu.resources
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.LoginGUI.resources
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.ManagerGUI_menu.resources
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.SellGUI_menu.resources
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.WarehouseUI_menu.resources
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.GenerateResource.cache
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfoInputs.cache
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfo.cs
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.CoreCompileInputs.cache
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.CopyComplete
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.pdb
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
-G:\C#\CS\Cuoi_Ky\Laptop_Store\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
->>>>>>> Stashed changes
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.exe
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.deps.json
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\GUI.pdb
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\BUS.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DAL.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DTO.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\BUS.pdb
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DTO.pdb
+D:\C\GitHub\BaiTapCuoiKy\GUI\bin\Debug\net7.0-windows\DAL.pdb
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.AssemblyReference.cache
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AccGUI_menu.resources
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.CustomerSeviceUI_menu.resources
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.LoginGUI.resources
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.ManagerGUI_menu.resources
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.SellGUI_menu.resources
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.ValidateMessageBox.resources
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.WarehouseUI_menu.resources
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.GenerateResource.cache
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfoInputs.cache
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfo.cs
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.CoreCompileInputs.cache
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.sourcelink.json
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.csproj.CopyComplete
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.pdb
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
+D:\C\GitHub\BaiTapCuoiKy\GUI\obj\Debug\net7.0-windows\ref\GUI.dll

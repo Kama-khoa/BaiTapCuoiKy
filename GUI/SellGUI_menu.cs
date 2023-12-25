@@ -7,15 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace GUI
 {
     public partial class SellGUI_menu : Form
     {
-
-        public SellGUI_menu()
+        private Staff user = new();
+        public SellGUI_menu(Staff user)
         {
-
+            this.user = user;
             InitializeComponent();
         }
         private void SellGUI_menu_Load(object sender, EventArgs e)
@@ -31,6 +33,11 @@ namespace GUI
         private void btnOrder_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -16,7 +17,6 @@ namespace BUS
         public static StaffBUS Instance
         {
             get { return instance; }
-            set { instance = value; }
         }
         public bool checkLogInfo(Staff staff)
         {
@@ -30,19 +30,20 @@ namespace BUS
             }
             return false;
         }
-        public void get(List<Staff> list)
+        public List<Staff> get()
         {
-            list = StaffDAL.Instance.get();
+            return  StaffDAL.Instance.get();
         }
-        public void insert()
+        public bool insert(Staff staff)
         {
-
+            return StaffDAL.Instance.insert(staff);
         }
-        public void update() { 
+        public bool update(Staff staff) {
+            return StaffDAL.Instance.update(staff);
         }
-        public void delete()
+        public bool delete(Staff staff)
         {
-
+            return StaffDAL.Instance.delete(staff);
         }
     }
 }

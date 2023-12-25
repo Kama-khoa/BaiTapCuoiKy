@@ -49,6 +49,8 @@
             button2 = new Button();
             dataGridView1 = new DataGridView();
             tabPage3 = new TabPage();
+            button14 = new Button();
+            button13 = new Button();
             textBox3 = new TextBox();
             label7 = new Label();
             comboBox2 = new ComboBox();
@@ -63,8 +65,6 @@
             dataGridView2 = new DataGridView();
             label4 = new Label();
             label3 = new Label();
-            button13 = new Button();
-            button14 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
@@ -102,6 +102,7 @@
             button1.TabIndex = 4;
             button1.Text = "Sản phẩm";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // pictureBox1
             // 
@@ -276,12 +277,30 @@
             tabPage3.Controls.Add(dataGridView2);
             tabPage3.Controls.Add(label4);
             tabPage3.Controls.Add(label3);
-            tabPage3.Location = new Point(4, 37);
+            tabPage3.Location = new Point(4, 34);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(1145, 902);
+            tabPage3.Size = new Size(1145, 905);
             tabPage3.TabIndex = 3;
             tabPage3.Text = "tabPage3";
             tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            button14.Location = new Point(971, 164);
+            button14.Name = "button14";
+            button14.Size = new Size(112, 34);
+            button14.TabIndex = 16;
+            button14.Text = "Xóa";
+            button14.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            button13.Location = new Point(44, 124);
+            button13.Name = "button13";
+            button13.Size = new Size(112, 34);
+            button13.TabIndex = 15;
+            button13.Text = "Tạo order";
+            button13.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
@@ -405,24 +424,6 @@
             label3.Size = new Size(112, 28);
             label3.TabIndex = 0;
             label3.Text = "khách hàng";
-            // 
-            // button13
-            // 
-            button13.Location = new Point(44, 124);
-            button13.Name = "button13";
-            button13.Size = new Size(112, 34);
-            button13.TabIndex = 15;
-            button13.Text = "Tạo order";
-            button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            button14.Location = new Point(971, 164);
-            button14.Name = "button14";
-            button14.Size = new Size(112, 34);
-            button14.TabIndex = 16;
-            button14.Text = "Xóa";
-            button14.UseVisualStyleBackColor = true;
             // 
             // SellGUI_menu
             // 

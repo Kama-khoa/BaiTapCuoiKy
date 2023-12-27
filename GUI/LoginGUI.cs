@@ -15,11 +15,12 @@ namespace GUI
         
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if (StaffBUS.Instance.checkLogInfo(user)==true)
+            if (StaffBUS.Instance.checkLogInfo(ref user)==true)
             {
                 this.Hide();
                 userRole();
                 this.Show();
+                
             }
             else
             {
@@ -35,13 +36,7 @@ namespace GUI
         }
         private void userRole()
         {
-            foreach (Staff item in StaffDAL.Instance.get())
-            {
-                if (user.Username == item.Username && user.Password == item.Password)
-                {
-                    user = item;
-                }
-            }
+  
             switch (user.RoleInt)
             {
                 case 0:
@@ -50,7 +45,7 @@ namespace GUI
                     break;
                 case 1:
                     SellGUI_menu menu1 = new(user);
-                    menu1.ShowDialog();
+                    menu1.Show();
                     break;
                 case 2:
                     AccGUI_menu menu2 = new(user);

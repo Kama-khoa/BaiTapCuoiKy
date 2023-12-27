@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MMC1K7wVV8bvPHsnqI5drHxsLM1YHiEBSrPWqiFQSqxZRtwwufPfLNXO/YCbB9WvnPNS3WdvwmMGt/OfRvVXbQ==",
+  "dgSpecHash": "EqSsk2yQxbLtw1x7nTYO/3V6FZkNvxTPW8+CZ4OgC3jOEjYSEpwjJMXOrkQ4I3yJW8G60QA9GmRTdMcLMwMUSw==",
   "success": true,
-  "projectFilePath": "D:\\C\\GitHub\\BaiTapCuoiKy\\DTO\\DTO.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\khoa6\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\khoa6\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\khoa6\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Manh Hung\\Desktop\\BT cuoi ky\\BaiTapCuoiKy\\DTO\\DTO.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

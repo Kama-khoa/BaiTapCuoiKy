@@ -34,10 +34,13 @@
             button3 = new Button();
             btnCustomer = new Button();
             tabPage3 = new TabPage();
+            button1 = new Button();
             dtpOrder = new DateTimePicker();
             tbSeller = new TextBox();
+            textBox3 = new TextBox();
             tbAcc = new TextBox();
             tbCus = new TextBox();
+            label14 = new Label();
             label13 = new Label();
             label5 = new Label();
             label11 = new Label();
@@ -51,12 +54,6 @@
             lb5 = new Label();
             label12 = new Label();
             dataGridView2 = new DataGridView();
-            OrderID = new DataGridViewTextBoxColumn();
-            CustomerID = new DataGridViewTextBoxColumn();
-            AccoutantID = new DataGridViewTextBoxColumn();
-            SellerID = new DataGridViewTextBoxColumn();
-            OrderTime = new DataGridViewTextBoxColumn();
-            Payment = new DataGridViewTextBoxColumn();
             label3 = new Label();
             tabPage2 = new TabPage();
             textBox2 = new TextBox();
@@ -71,9 +68,11 @@
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
-            textBox3 = new TextBox();
-            label14 = new Label();
-            button1 = new Button();
+            OrderID = new DataGridViewTextBoxColumn();
+            CustomerID = new DataGridViewTextBoxColumn();
+            SellerID = new DataGridViewTextBoxColumn();
+            OrderTime = new DataGridViewTextBoxColumn();
+            Payment = new DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabPage3.SuspendLayout();
@@ -164,12 +163,21 @@
             tabPage3.Text = "tabPage3";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.Location = new Point(696, 833);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 5;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // dtpOrder
             // 
             dtpOrder.Format = DateTimePickerFormat.Short;
             dtpOrder.Location = new Point(663, 73);
             dtpOrder.Name = "dtpOrder";
-            dtpOrder.Size = new Size(119, 25);
+            dtpOrder.Size = new Size(128, 25);
             dtpOrder.TabIndex = 18;
             // 
             // tbSeller
@@ -178,6 +186,13 @@
             tbSeller.Name = "tbSeller";
             tbSeller.Size = new Size(192, 25);
             tbSeller.TabIndex = 17;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(590, 165);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(192, 25);
+            textBox3.TabIndex = 17;
             // 
             // tbAcc
             // 
@@ -192,6 +207,15 @@
             tbCus.Name = "tbCus";
             tbCus.Size = new Size(192, 25);
             tbCus.TabIndex = 16;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(487, 168);
+            label14.Name = "label14";
+            label14.Size = new Size(67, 19);
+            label14.TabIndex = 15;
+            label14.Text = "Tìm kiếm:";
             // 
             // label13
             // 
@@ -250,7 +274,7 @@
             cboPayment.Items.AddRange(new object[] { "Tiền mặt", "Chuyển khoản" });
             cboPayment.Location = new Point(663, 27);
             cboPayment.Name = "cboPayment";
-            cboPayment.Size = new Size(119, 25);
+            cboPayment.Size = new Size(128, 25);
             cboPayment.TabIndex = 11;
             // 
             // button8
@@ -301,55 +325,13 @@
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { OrderID, CustomerID, AccoutantID, SellerID, OrderTime, Payment });
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { OrderID, CustomerID, SellerID, OrderTime, Payment });
             dataGridView2.Location = new Point(5, 290);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 62;
             dataGridView2.RowTemplate.Height = 33;
             dataGridView2.Size = new Size(1140, 522);
             dataGridView2.TabIndex = 2;
-            // 
-            // OrderID
-            // 
-            OrderID.HeaderText = "ID";
-            OrderID.MinimumWidth = 6;
-            OrderID.Name = "OrderID";
-            OrderID.Width = 125;
-            // 
-            // CustomerID
-            // 
-            CustomerID.HeaderText = "Khách hàng";
-            CustomerID.MinimumWidth = 6;
-            CustomerID.Name = "CustomerID";
-            CustomerID.Width = 125;
-            // 
-            // AccoutantID
-            // 
-            AccoutantID.HeaderText = "Kế toán";
-            AccoutantID.MinimumWidth = 6;
-            AccoutantID.Name = "AccoutantID";
-            AccoutantID.Width = 125;
-            // 
-            // SellerID
-            // 
-            SellerID.HeaderText = "Seller";
-            SellerID.MinimumWidth = 6;
-            SellerID.Name = "SellerID";
-            SellerID.Width = 125;
-            // 
-            // OrderTime
-            // 
-            OrderTime.HeaderText = "Ngày tháng";
-            OrderTime.MinimumWidth = 6;
-            OrderTime.Name = "OrderTime";
-            OrderTime.Width = 125;
-            // 
-            // Payment
-            // 
-            Payment.HeaderText = "Phương thức thanh toán";
-            Payment.MinimumWidth = 6;
-            Payment.Name = "Payment";
-            Payment.Width = 125;
             // 
             // label3
             // 
@@ -368,10 +350,10 @@
             tabPage2.Controls.Add(label1);
             tabPage2.Controls.Add(button5);
             tabPage2.Controls.Add(dataGridView1);
-            tabPage2.Location = new Point(4, 24);
+            tabPage2.Location = new Point(4, 26);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1145, 915);
+            tabPage2.Size = new Size(1145, 913);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
@@ -487,30 +469,40 @@
             label7.TabIndex = 0;
             label7.Text = "label7";
             // 
-            // textBox3
+            // OrderID
             // 
-            textBox3.Location = new Point(590, 165);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(192, 25);
-            textBox3.TabIndex = 17;
+            OrderID.HeaderText = "ID";
+            OrderID.MinimumWidth = 6;
+            OrderID.Name = "OrderID";
+            OrderID.Width = 125;
             // 
-            // label14
+            // CustomerID
             // 
-            label14.AutoSize = true;
-            label14.Location = new Point(487, 168);
-            label14.Name = "label14";
-            label14.Size = new Size(67, 19);
-            label14.TabIndex = 15;
-            label14.Text = "Tìm kiếm:";
+            CustomerID.HeaderText = "Khách hàng";
+            CustomerID.MinimumWidth = 6;
+            CustomerID.Name = "CustomerID";
+            CustomerID.Width = 125;
             // 
-            // button1
+            // SellerID
             // 
-            button1.Location = new Point(696, 833);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 5;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            SellerID.HeaderText = "Seller";
+            SellerID.MinimumWidth = 6;
+            SellerID.Name = "SellerID";
+            SellerID.Width = 125;
+            // 
+            // OrderTime
+            // 
+            OrderTime.HeaderText = "Ngày tháng";
+            OrderTime.MinimumWidth = 6;
+            OrderTime.Name = "OrderTime";
+            OrderTime.Width = 125;
+            // 
+            // Payment
+            // 
+            Payment.HeaderText = "Phương thức thanh toán";
+            Payment.MinimumWidth = 6;
+            Payment.Name = "Payment";
+            Payment.Width = 125;
             // 
             // AccGUI_menu
             // 
@@ -576,14 +568,13 @@
         private DateTimePicker dtpOrder;
         private Label label13;
         private Label label5;
-        private DataGridViewTextBoxColumn OrderID;
-        private DataGridViewTextBoxColumn CustomerID;
-        private DataGridViewTextBoxColumn AccoutantID;
-        private DataGridViewTextBoxColumn SellerID;
-        private DataGridViewTextBoxColumn OrderTime;
-        private DataGridViewTextBoxColumn Payment;
         private Button button1;
         private TextBox textBox3;
         private Label label14;
+        private DataGridViewTextBoxColumn OrderID;
+        private DataGridViewTextBoxColumn CustomerID;
+        private DataGridViewTextBoxColumn SellerID;
+        private DataGridViewTextBoxColumn OrderTime;
+        private DataGridViewTextBoxColumn Payment;
     }
 }

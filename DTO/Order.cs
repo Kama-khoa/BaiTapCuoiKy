@@ -8,6 +8,13 @@ namespace DTO
 {
     public class Order
     {
+        private List<Laptop> laptop;
+        public List<Laptop> Laptop
+        {
+            get { return laptop; }
+            set { laptop = value; }
+        }
+
         private int order_id;
 
         public int Order_id
@@ -16,26 +23,26 @@ namespace DTO
             set { order_id = value; }
         }
 
-        private string customer_id;
+        private Customer customer;
 
-        public string Customer_id
+        public Customer Customer
         {
-            get { return customer_id; }
-            set { customer_id = value; }
+            get { return customer; }
+            set { customer = value; }
         }
 
-        private string accoutant_id;
-        public string Accoutant_id
+        private Staff accoutant;
+        public Staff Accoutant
         {
-            get { return accoutant_id; }
-            set { accoutant_id = value; }
+            get { return accoutant; }
+            set { accoutant = value; }
         }
 
-        private string seller_id;
-        public string Seller_id
+        private Staff seller;
+        public Staff Seller
         {
-            get { return seller_id; }
-            set { seller_id = value; }
+            get { return seller; }
+            set { seller = value; }
         }
 
         private DateTime order_date;
@@ -49,14 +56,14 @@ namespace DTO
         public int StatusInt
         {
             get { return statusInt; }
-            set { statusInt = value; }
+            set { statusInt = value; setStatusString(); }
         }
 
         private string statusString = "Chưa thanh toán";
         public string StatusString
         {
             get { return statusString; }
-            set { statusString = value; }
+            set { statusString = value; setPaymentInt(); }
         }
 
         private void setStatusString()
@@ -101,14 +108,14 @@ namespace DTO
         public int PaymentInt
         {
             get { return paymentInt; }
-            set { paymentInt = value; }
+            set { paymentInt = value; setPaymentString(); }
         }
 
         private string paymentString = "Tiền mặt";
         public string PaymentString
         {
             get { return paymentString; }
-            set { paymentString = value; }
+            set { paymentString = value; setPaymentInt(); }
         }
 
         private void setPaymentString()
@@ -135,5 +142,6 @@ namespace DTO
                     break;
             }
         }
+  
     }
 }

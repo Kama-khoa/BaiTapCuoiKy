@@ -26,17 +26,16 @@ namespace GUI
             dataGridView1.Rows.Clear();
             foreach (Order item in OrderBUS.Instance.GetOrders())
             {
-                dataGridView1.Rows.Add(item.Order_id, item.Customer_name, item.Accoutant_name, item.Seller_name, item.Order_date, item.PaymentString);
+                dataGridView1.Rows.Add(item.Order_id, item.Customer, item.Seller, item.Order_date, item.PaymentString);
             }
             DataGridViewRow row = dataGridView1.Rows[0];
             if (Convert.ToString(row.Cells["ID"].Value) != "")
             {
-                tbID.Text = Convert.ToString(row.Cells["Column1"].Value);
-                tbCus.Text = Convert.ToString(row.Cells["Column2"].Value);
-                tbAcc.Text = Convert.ToString(row.Cells["Column3"].Value);
-                tbSeller.Text = Convert.ToString(row.Cells["Column4"].Value);
-                cboPayment.Text = Convert.ToString(row.Cells["Column5"].Value);
-                dtpOrder.Text = Convert.ToDateTime(row.Cells["Column6"].Value);
+                tbID.Text = Convert.ToString(row.Cells["ID"].Value);
+                tbCus.Text = Convert.ToString(row.Cells["CustomerID"].Value);
+                tbSeller.Text = Convert.ToString(row.Cells["SellerID"].Value);
+                cboPayment.Text = Convert.ToString(row.Cells["Payment"].Value);
+                dtpOrder.Text = Convert.ToString(row.Cells["OrderTime"].Value);
             }
         }
 

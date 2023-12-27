@@ -18,9 +18,9 @@ namespace BUS
         {
             get { return instance; }
         }
-        public bool checkLogInfo(Staff staff)
+        public bool checkLogInfo(ref Staff staff)
         {
-            foreach (Staff item in StaffDAL.Instance.get())
+            foreach ( Staff item in StaffDAL.Instance.get())
             {
                 if (staff.Username == item.Username && staff.Password == item.Password)
                 {

@@ -377,7 +377,7 @@ namespace GUI
                     Laptop laptop = new();
                     laptop.ID = Convert.ToInt32(row.Cells["Col1"].Value);
                     laptop.Name = Convert.ToString(row.Cells["Col2"].Value);
-                    laptop.QuantityBought = Convert.ToInt32(row.Cells["Col3"].Value);
+                    laptop.QuantityBought = Convert.ToInt32(row.Cells["Col4"].Value);
                     order.Laptop.Add(laptop);
                 }
                 if (OrderBUS.Instance.insert(order) == true)
@@ -393,7 +393,7 @@ namespace GUI
         }
         private void btnGhiOrder_Click(object sender, EventArgs e)
         {
-            if (cboOrderLapTop.Text != "" && tbSoLuong2.Text != "" && Convert.ToDecimal(tbSoLuong2.Text) == 0)
+            if (cboOrderLapTop.Text != "" && tbSoLuong2.Text != "" && Convert.ToDecimal(tbSoLuong2.Text) != 0)
             {
                 if (choosenlaptop.QuantityInStock < choosenlaptop.QuantityBought)
                 {
@@ -401,7 +401,7 @@ namespace GUI
                 }
                 else if (btnCustomerThem.Enabled == true)
                 {
-                    dgvOrder.Rows.Add(choosenlaptop.ID, choosenlaptop.Name, choosenlaptop.QuantityBought, choosenlaptop.Price, (decimal)choosenlaptop.Price * (decimal)choosenlaptop.QuantityBought);
+                    dgvOrder.Rows.Add(choosenlaptop.ID, choosenlaptop.Name, choosenlaptop.Price, choosenlaptop.QuantityBought, (decimal)choosenlaptop.Price * (decimal)choosenlaptop.QuantityBought);
                 }
                 else
                 {
@@ -413,7 +413,7 @@ namespace GUI
                             break;
                         }
                     }
-                    dgvOrder.Rows.Add(choosenlaptop.ID, choosenlaptop.Name, choosenlaptop.QuantityBought, choosenlaptop.Price, (decimal)choosenlaptop.Price * (decimal)choosenlaptop.QuantityBought);
+                    dgvOrder.Rows.Add(choosenlaptop.ID, choosenlaptop.Name, choosenlaptop.Price, choosenlaptop.QuantityBought, (decimal)choosenlaptop.Price * (decimal)choosenlaptop.QuantityBought);
                 }
                 tab2loading2();
             }
@@ -511,5 +511,6 @@ namespace GUI
         #endregion
         #endregion
 
+        
     }
 }

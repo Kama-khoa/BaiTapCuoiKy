@@ -270,14 +270,12 @@ namespace GUI
         #region textChangeEvent
         #endregion
         #endregion
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+        
         private void btnHoaDonNhapDangCho_Click(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }

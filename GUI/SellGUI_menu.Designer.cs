@@ -36,6 +36,7 @@
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
+            btnExportExcel = new Button();
             btnGhi1 = new Button();
             btnCustomerHuy = new Button();
             txbCustomerAddress = new TextBox();
@@ -79,7 +80,6 @@
             Col4 = new DataGridViewTextBoxColumn();
             Col5 = new DataGridViewTextBoxColumn();
             label3 = new Label();
-            btnExportExcel = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
@@ -177,13 +177,23 @@
             tabPage2.Controls.Add(btnCustomerThem);
             tabPage2.Controls.Add(btnCustomerSua);
             tabPage2.Controls.Add(dgvKhachHang);
-            tabPage2.Location = new Point(4, 37);
+            tabPage2.Location = new Point(4, 34);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1145, 905);
+            tabPage2.Size = new Size(1145, 908);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnExportExcel
+            // 
+            btnExportExcel.Location = new Point(718, 116);
+            btnExportExcel.Name = "btnExportExcel";
+            btnExportExcel.Size = new Size(112, 34);
+            btnExportExcel.TabIndex = 15;
+            btnExportExcel.Text = "Xuất Excel";
+            btnExportExcel.UseVisualStyleBackColor = true;
+            btnExportExcel.Click += btnExportExcel_Click;
             // 
             // btnGhi1
             // 
@@ -369,9 +379,9 @@
             tabPage3.Controls.Add(label5);
             tabPage3.Controls.Add(dgvOrder);
             tabPage3.Controls.Add(label3);
-            tabPage3.Location = new Point(4, 34);
+            tabPage3.Location = new Point(4, 37);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(1145, 908);
+            tabPage3.Size = new Size(1145, 905);
             tabPage3.TabIndex = 3;
             tabPage3.Text = "tabPage3";
             tabPage3.UseVisualStyleBackColor = true;
@@ -547,6 +557,7 @@
             dgvOrder.Size = new Size(1140, 522);
             dgvOrder.TabIndex = 2;
             dgvOrder.CellClick += dgvOrder_CellClick;
+            
             // 
             // Col1
             // 
@@ -596,16 +607,6 @@
             label3.Size = new Size(74, 28);
             label3.TabIndex = 0;
             label3.Text = "Laptop";
-            // 
-            // btnExportExcel
-            // 
-            btnExportExcel.Location = new Point(718, 116);
-            btnExportExcel.Name = "btnExportExcel";
-            btnExportExcel.Size = new Size(112, 34);
-            btnExportExcel.TabIndex = 15;
-            btnExportExcel.Text = "Xuất Excel";
-            btnExportExcel.UseVisualStyleBackColor = true;
-            btnExportExcel.Click += btnExportExcel_Click;
             // 
             // SellGUI_menu
             // 

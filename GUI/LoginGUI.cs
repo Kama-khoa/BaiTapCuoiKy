@@ -15,12 +15,14 @@ namespace GUI
         
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if (StaffBUS.Instance.checkLogInfo(ref user)==true)
+            if (StaffBUS.Instance.checkLogInfo(ref user))
+
             {
                 this.Hide();
                 userRole();
                 this.Show();
-                
+                usernameTextbox.Text = "";
+                passwordTextbox.Text = "";
             }
             else
             {
@@ -36,27 +38,27 @@ namespace GUI
         }
         private void userRole()
         {
-  
             switch (user.RoleInt)
             {
                 case 0:
-                    ManagerGUI_menu menu0 = new(user);
+                    AdminGUI_menu menu0 = new(user);
                     menu0.ShowDialog();
                     break;
                 case 1:
                     SellGUI_menu menu1 = new(user);
-                    menu1.Show();
+                    menu1.ShowDialog();
                     break;
                 case 2:
+
                     AccGUI_menu menu2 = new(user);
                     menu2.ShowDialog();
                     break;
                 case 3:
-                    SellGUI_menu menu3 = new(user);
+                    WarehouseUI_menu menu3 = new(user);
                     menu3.ShowDialog();
                     break;
                 case 4:
-                    SellGUI_menu menu4 = new(user);
+                   SellGUI_menu menu4 = new(user);
                     menu4.ShowDialog();
                     break;
             }

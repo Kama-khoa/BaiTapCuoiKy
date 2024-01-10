@@ -45,5 +45,13 @@ namespace BUS
         {
             return StaffDAL.Instance.delete(staff);
         }
+        public Staff getSeller(Staff seller)
+        {
+            return StaffDAL.Instance.GetSeller(seller);
+        }
+        public Staff getAccountant(Staff acc)
+        {
+            return StaffDAL.Instance.GetAccountant(acc);
+        }
     }
 }

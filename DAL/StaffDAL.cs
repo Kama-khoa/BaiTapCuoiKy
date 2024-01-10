@@ -23,7 +23,7 @@ namespace DAL
         {
             List<Staff> list = new List<Staff>();
             conn.Open();
-            using (var cmd = new SqlCommand("GetStaff", conn))
+            using (var cmd = new SqlCommand("GetStaffData", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 DbDataReader reader = cmd.ExecuteReader();           
@@ -35,6 +35,7 @@ namespace DAL
                     staff.Username= reader.GetString("username");
                     staff.Password= reader.GetString("password");
                     staff.RoleInt = reader.GetInt32("role");
+                    staff.Password = MD5Security.Decrypt(staff.Password, "20012004", true);
                     list.Add(staff);
                 }
             }
@@ -43,10 +44,11 @@ namespace DAL
         }
         public bool insert(Staff staff)
         {
+            staff.Password = MD5Security.Encrypt(staff.Password,"20012004",true);
             try
             {
                 conn.Open();
-                using (var cmd = new SqlCommand("InsertStaff", conn))
+                using (var cmd = new SqlCommand("InsertStaffData", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.Add("@staff_name", SqlDbType.NVarChar).Value = staff.Name;
@@ -65,10 +67,11 @@ namespace DAL
         }
         public bool update(Staff staff)
         {
+            staff.Password = MD5Security.Encrypt(staff.Password, "20012004", true);
             try
             {
                 conn.Open();
-                using (var cmd = new SqlCommand("UpdateStaff", conn))
+                using (var cmd = new SqlCommand("UpdateStaffData", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.Add("@staff_id", SqlDbType.Int).Value = staff.ID;
@@ -91,7 +94,7 @@ namespace DAL
             try
             {
                 conn.Open();
-                using (var cmd = new SqlCommand("DeleteStaff", conn))
+                using (var cmd = new SqlCommand("DeleteStaffData", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.Add("@staff_id", SqlDbType.Int).Value = staff.ID;
@@ -105,6 +108,41 @@ namespace DAL
                 return false;
             }
         }
-        
+        public Staff GetSeller(Staff seller)
+        {
+            conn.Open();
+            using (var cmd = new SqlCommand("GetSellerByID", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@seller_id", SqlDbType.Int).Value = seller.ID;
+
+                DbDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    seller.Name = reader.GetString("staff_name");
+                    seller.RoleInt = reader.GetInt32("role");
+                }
+            }
+            conn.Close();
+            return seller;
+        }
+        public Staff GetAccountant(Staff acc)
+        {
+            conn.Open();
+            using (var cmd = new SqlCommand("GetAccountantByID", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@accountant_id", SqlDbType.Int).Value = acc.ID;
+
+                DbDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    acc.Name = reader.GetString("staff_name");
+                    acc.RoleInt = reader.GetInt32("role");
+                }
+            }
+            conn.Close();
+            return acc;
+        }
     }
 }

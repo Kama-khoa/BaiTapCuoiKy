@@ -16,9 +16,25 @@ namespace BUS
         {
             get {  return instance; }
         }
-        public List<Order> GetOrders()
+        public List<Order> get()
         {
-           return OrderDAL.Instance.GetOrders();
+           return OrderDAL.Instance.get();
+        }
+        public bool insert(Order order)
+        {
+            return OrderDAL.Instance.insert(order);
+        }
+        public bool update( Order order)
+        {
+            return OrderDAL.Instance.update(order);
+        }
+        public bool delete(Order order)
+        {
+            return OrderDAL.Instance.delete(order);
+        }
+        public Order getOrderByID(int ID)
+        {
+            return OrderDAL.Instance.getOrderByID(ID);
         }
     }
 }

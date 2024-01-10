@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class ImportInvoice
+    public class ImportInvoice
     {
         private List<Laptop> laptops = new List<Laptop>();
         public List<Laptop> Laptops
@@ -38,25 +38,11 @@ namespace DTO
             get { return importDate; }
             set { importDate = value; }
         }
-        private int statusINT;
-        public int StatusINT
+        private string note;
+        public string Note
         {
-            get { return statusINT; }
-            set { statusINT = value; }
-        }
-        private string statusSTRING;
-        public string StatusSTRING
-        {
-            get { return statusSTRING; }
-            set { statusSTRING = value; }
-        }
-        private void getStatusString()
-        {
-
-        }
-        private void getStatusInt()
-        {
-
+            get { return note; }
+            set { note = value; }
         }
     }
 }

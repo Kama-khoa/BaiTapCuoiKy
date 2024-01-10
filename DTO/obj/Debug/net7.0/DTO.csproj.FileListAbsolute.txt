@@ -54,3 +54,26 @@ D:\C\GitHub\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.dll
 D:\C\GitHub\BaiTapCuoiKy\DTO\obj\Debug\net7.0\refint\DTO.dll
 D:\C\GitHub\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.pdb
 D:\C\GitHub\BaiTapCuoiKy\DTO\obj\Debug\net7.0\ref\DTO.dll
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\bin\Debug\net7.0\DTO.deps.json
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\bin\Debug\net7.0\DTO.dll
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\bin\Debug\net7.0\DTO.pdb
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.AssemblyInfoInputs.cache
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.AssemblyInfo.cs
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.dll
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\obj\Debug\net7.0\refint\DTO.dll
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.pdb
+C:\Users\Manh Hung\Desktop\BT cuoi ky\BaiTapCuoiKy\DTO\obj\Debug\net7.0\ref\DTO.dll
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\bin\Debug\net7.0\DTO.deps.json
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\bin\Debug\net7.0\DTO.dll
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\bin\Debug\net7.0\DTO.pdb
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.csproj.AssemblyReference.cache
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.AssemblyInfoInputs.cache
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.AssemblyInfo.cs
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.csproj.CoreCompileInputs.cache
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.dll
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\refint\DTO.dll
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\DTO.pdb
+C:\C# Hoc ki\BaiTapCuoiKy\DTO\obj\Debug\net7.0\ref\DTO.dll

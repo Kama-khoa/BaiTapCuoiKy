@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,8 +12,9 @@ namespace DTO
     public class Laptop
     {
         private int id;
-        public int ID { 
-            get { return id; } 
+        public int ID
+        {
+            get { return id; }
             set { id = value; }
         }
         private string name;
@@ -41,7 +45,7 @@ namespace DTO
         public string Ram
         {
             get { return ram; }
-            set {  ram = value; }
+            set { ram = value; }
         }
         private string hardDriver;
         public string HardDriver
@@ -65,19 +69,19 @@ namespace DTO
         public string Battery
         {
             get { return battery; }
-            set {  battery = value; }
+            set { battery = value; }
         }
         private string os;
         public string OS
         {
             get { return os; }
-            set {  os = value; }
+            set { os = value; }
         }
         private double weight;
         public double Weight
         {
             get { return weight; }
-            set {  weight = value; }
+            set { weight = value; }
         }
         private string material;
         public string Material
@@ -85,8 +89,8 @@ namespace DTO
             get { return material; }
             set { material = value; }
         }
-        private string price;
-        public string Price
+        private decimal price;
+        public decimal Price
         {
             get { return price; }
             set { price = value; }
@@ -97,11 +101,12 @@ namespace DTO
             get { return port; }
             set { port = value; }
         }
-        private string description;
-        public string Description
+
+        private string warrantyPeriod;
+        public string WarrantyPeriod
         {
-            get { return description; }
-            set { description = value; }
+            get { return warrantyPeriod; }
+            set { warrantyPeriod = value; }
         }
         private string connection;
         public string Connection
@@ -113,13 +118,13 @@ namespace DTO
         public string Security
         {
             get { return security; }
-            set {  security = value; }
+            set { security = value; }
         }
         private string keyboard;
         public string Keyboard
         {
             get { return keyboard; }
-            set {  keyboard = value; }
+            set { keyboard = value; }
         }
         private string audio;
         public string Audio
@@ -133,18 +138,30 @@ namespace DTO
             get { return size; }
             set { size = value; }
         }
-        private string quantityInStock;
-        public string QuantityInStock
+        private int quantityInStock;
+        public int QuantityInStock
         {
             get { return quantityInStock; }
-            set {  quantityInStock = value; }
+            set { quantityInStock = value; }
         }
-        private string quantityBought;
-        public string QuantityBought
+        private int quantityBought;
+        public int QuantityBought
         {
             get { return quantityBought; }
             set { quantityBought = value; }
         }
-
+        private int quantityImport;
+        public int QuantityImport
+        {
+            get { return quantityImport; }
+            set { quantityImport = value; }
+        }
+        private decimal importPrice;
+        public decimal ImportPrice
+        {
+            get { return importPrice; }
+            set { importPrice = value; }
+        } 
+        
     }
 }

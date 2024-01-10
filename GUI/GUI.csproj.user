@@ -10,13 +10,10 @@
     <Compile Update="LoginGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ManagerGUI_menu.cs">
+    <Compile Update="AdminGUI_menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SellGUI_menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="ValidateMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WarehouseUI_menu.cs">

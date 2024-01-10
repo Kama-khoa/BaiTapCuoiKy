@@ -13,19 +13,24 @@ using DTO;
 
 namespace GUI
 {
-    public partial class ManagerGUI_menu : Form
+    public partial class AdminGUI_menu : Form
     {
         private Staff staff = new();
         private Staff user = new();
 
-        public ManagerGUI_menu(Staff user)
+        public AdminGUI_menu(Staff user)
         {
             this.user = user;
             InitializeComponent();
         }
+        private void tab1Reset()
+        {
+            tabControl1.SelectedIndex = 1;
+        }
+        #region tab0
         #region LoadingEvent
         //Xu ly loading
-        private void ManagerGUI_menu_Load(object sender, EventArgs e)
+        private void AdminGUI_menu_Load(object sender, EventArgs e)
         {
             tab0Reset();
         }
@@ -48,6 +53,7 @@ namespace GUI
             dataGridView1.Rows.Clear();
             foreach (Staff item in StaffBUS.Instance.get())
             {
+                if (item.RoleInt == 0 || item.ID == user.ID) continue;
                 dataGridView1.Rows.Add(item.ID, item.Name, item.RoleString, item.Username, item.Password);
             }
             DataGridViewRow row = dataGridView1.Rows[0];
@@ -60,11 +66,7 @@ namespace GUI
                 cbRole.Text = Convert.ToString(row.Cells["Column5"].Value);
             }
         }
-        private void tab1Reset()
-        {
-            tabControl1.SelectedIndex = 1;
-        }
-        
+
         #endregion
 
         #region ClickEvent
@@ -108,32 +110,42 @@ namespace GUI
         }
         private void btnThem1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Enabled = false;
-            tbHoTen.Enabled = true;
-            cbRole.Enabled = true;
-            btnGhi1.Enabled = true;
-            btnHuy1.Enabled = true;
-            btnSua1.Enabled = false;
-            btnXoa1.Enabled = false;
-            tbID.Text = "";
-            tbHoTen.Text = "";
-            tbTaiKhoan.Text = "********";
-            tbMatKhau.Text = "********";
-            cbRole.Text = "";
+            if (btnSua1.Enabled == true)
+            {
+                dataGridView1.Enabled = false;
+                tbHoTen.Enabled = true;
+                cbRole.Enabled = true;
+                btnGhi1.Enabled = true;
+                btnHuy1.Enabled = true;
+                btnSua1.Enabled = false;
+                btnXoa1.Enabled = false;
+                tbID.Text = "";
+                tbHoTen.Text = "";
+                tbTaiKhoan.Text = "********";
+                tbMatKhau.Text = "********";
+                cbRole.Text = "";
+            }
         }
         private void btnSua1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Enabled = false;
-            tbHoTen.Enabled = true;
-            cbRole.Enabled = true;
-            tbTaiKhoan.Enabled = true;
-            tbMatKhau.Enabled = true;
-            btnGhi1.Enabled = true;
-            btnHuy1.Enabled = true;
-            //btnSua1.Enabled = false;
-            btnXoa1.Enabled = false;
-            btnThem1.Enabled = false;
-            
+            if (btnGhi1.Enabled == true)
+            {
+                dataGridView1.Enabled = false;
+                tbHoTen.Enabled = true;
+                cbRole.Enabled = true;
+                tbTaiKhoan.Enabled = false;
+                tbMatKhau.Enabled = true;
+                btnGhi1.Enabled = true;
+                btnHuy1.Enabled = true;
+                //btnSua1.Enabled = false;
+                btnXoa1.Enabled = false;
+                btnThem1.Enabled = false;
+            }
+
+        }
+        private void btnExportExcel_Click(object sender, EventArgs e)
+        {
+            ExportData.Instance.ToExcel(dataGridView1, "Danh sách tài khoản");
         }
         private void btnXoa1_Click(object sender, EventArgs e)
         {
@@ -231,6 +243,8 @@ namespace GUI
             staff.RoleString = cbRole.Text;
         }
         #endregion
+        #endregion
 
+        
     }
 }

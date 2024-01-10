@@ -20,7 +20,7 @@ namespace DAL
         }
         public void Open()
         {
-            if(conn.State != ConnectionState.Open)
+            if (conn.State != ConnectionState.Open)
             {
                 conn.Open();
             }
@@ -37,7 +37,7 @@ namespace DAL
             List<Customer> list = new List<Customer>();
 
             Open();
-            using (var cmd = new SqlCommand("GetStaff", conn))
+            using (var cmd = new SqlCommand("getCustomer", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 DbDataReader reader = cmd.ExecuteReader();
@@ -46,41 +46,26 @@ namespace DAL
                     Customer customer = new Customer();
                     customer.ID = reader.GetInt32("customer_id");
                     customer.Name = reader.GetString("customer_name");
-                    customer.Phone= reader.GetString("phone");
+                    customer.Phone = reader.GetString("phone");
                     customer.Address = reader.GetString("address");
                     list.Add(customer);
                 }
             }
             Close();
             return list;
-        }
-        public bool Check(Customer customer)
-        {
-            Open();
-            SqlCommand command = new SqlCommand("select phone from customers ", conn);
-            SqlDataReader dr = command.ExecuteReader();
-            while (dr.Read())
-            {
-                if (customer.Phone == dr["phone"])
-                {
-                    return true;
-                }
-            }
-            Close();
-            return false;
-
-        }
+        }  
         public bool insert (Customer customer)
+
         {
             try
             {
-                Open ();
-                using (var cmd = new SqlCommand("addKhachHang", conn))
-                {   
+                Open();
+                using (var cmd = new SqlCommand("insertCustomer", conn))
+                {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = customer.Name;
-                    cmd.Parameters.Add("@sdt", SqlDbType.VarChar).Value = customer.Phone;
-                    cmd.Parameters.Add("@diachi", SqlDbType.NVarChar).Value = customer.Address;
+                    cmd.Parameters.Add("@customer_name", SqlDbType.NVarChar).Value = customer.Name;
+                    cmd.Parameters.Add("@phone", SqlDbType.VarChar).Value = customer.Phone;
+                    cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = customer.Address;
                     cmd.ExecuteNonQuery();
                 }
                 Close();
@@ -96,7 +81,7 @@ namespace DAL
             try
             {
                 Open();
-                using (var cmd = new SqlCommand("updateKhachHang", conn))
+                using (var cmd = new SqlCommand("updateCustomer", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.Add("@customer_id", SqlDbType.Int).Value = customer.ID;
@@ -118,7 +103,7 @@ namespace DAL
             try
             {
                 Open();
-                using (var cmd = new SqlCommand("deleteKhachHang", conn))
+                using (var cmd = new SqlCommand("deleteCustomer", conn))
                 {
                     cmd.Parameters.Add("@customer_id", SqlDbType.Int).Value = customer.ID;
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -132,5 +117,26 @@ namespace DAL
                 return false;
             }
         }
+        public Customer GetCustomer(Customer cus)
+        {
+            Open();
+            using (var cmd = new SqlCommand("GetCustomerByID", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@customer_id", SqlDbType.Int).Value = cus.ID;
+
+                DbDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    cus.Name = reader.GetString("customer_name");
+                    cus.Phone = reader.GetString("phone");
+                    cus.Address = reader.GetString("address");
+
+                }
+            }
+            Close();
+            return cus;
+        }
+
     }
 }

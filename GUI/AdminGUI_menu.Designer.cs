@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class ManagerGUI_menu
+    partial class AdminGUI_menu
     {
         /// <summary>
         /// Required designer variable.
@@ -32,9 +32,8 @@
             btnQuanLyNhanSu = new Button();
             pictureBox1 = new PictureBox();
             button3 = new Button();
-            btnThongKe = new Button();
-            tabPage3 = new TabPage();
             tabPage2 = new TabPage();
+            btnExportExcel = new Button();
             btnXoa1 = new Button();
             cbRole = new ComboBox();
             label6 = new Label();
@@ -72,7 +71,6 @@
             groupBox1.Controls.Add(btnQuanLyNhanSu);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(btnThongKe);
             groupBox1.Location = new Point(6, 14);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(323, 943);
@@ -107,27 +105,9 @@
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
             // 
-            // btnThongKe
-            // 
-            btnThongKe.Location = new Point(0, 377);
-            btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(323, 83);
-            btnThongKe.TabIndex = 0;
-            btnThongKe.Text = "Thống kê";
-            btnThongKe.UseVisualStyleBackColor = true;
-            btnThongKe.Click += btnThongKe_Click;
-            // 
-            // tabPage3
-            // 
-            tabPage3.Location = new Point(4, 34);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(1145, 905);
-            tabPage3.TabIndex = 3;
-            tabPage3.Text = "tabPage3";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(btnExportExcel);
             tabPage2.Controls.Add(btnXoa1);
             tabPage2.Controls.Add(cbRole);
             tabPage2.Controls.Add(label6);
@@ -155,6 +135,16 @@
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btnExportExcel
+            // 
+            btnExportExcel.Location = new Point(845, 114);
+            btnExportExcel.Name = "btnExportExcel";
+            btnExportExcel.Size = new Size(112, 34);
+            btnExportExcel.TabIndex = 20;
+            btnExportExcel.Text = "Xuất Excel";
+            btnExportExcel.UseVisualStyleBackColor = true;
+            btnExportExcel.Click += btnExportExcel_Click;
+            // 
             // btnXoa1
             // 
             btnXoa1.Location = new Point(321, 227);
@@ -168,7 +158,7 @@
             // cbRole
             // 
             cbRole.FormattingEnabled = true;
-            cbRole.Items.AddRange(new object[] { "Quản lý", "Nhân viên bán hàng", "Kế toán", "Thủ kho", "Nhân viên chăm sóc khách hàng" });
+            cbRole.Items.AddRange(new object[] { "Nhân viên bán hàng", "Kế toán", "Thủ kho", "Nhân viên chăm sóc khách hàng" });
             cbRole.Location = new Point(149, 148);
             cbRole.Name = "cbRole";
             cbRole.Size = new Size(284, 36);
@@ -376,14 +366,13 @@
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage3);
             tabControl1.Location = new Point(329, 14);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(1153, 943);
             tabControl1.TabIndex = 18;
             // 
-            // ManagerGUI_menu
+            // AdminGUI_menu
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -391,9 +380,9 @@
             Controls.Add(tabControl1);
             Controls.Add(groupBox1);
             Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            Name = "ManagerGUI_menu";
-            Text = "ManagerGUI_menu";
-            Load += ManagerGUI_menu_Load;
+            Name = "AdminGUI_menu";
+            Text = "AdminGUI_menu";
+            Load += AdminGUI_menu_Load;
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabPage2.ResumeLayout(false);
@@ -408,8 +397,6 @@
         private Button btnQuanLyNhanSu;
         private PictureBox pictureBox1;
         private Button button3;
-        private Button btnThongKe;
-        private TabPage tabPage3;
         private TabPage tabPage2;
         private Button btnShowLogInfo;
         private TextBox tbID;
@@ -437,5 +424,6 @@
         private ComboBox cbRole;
         private DataGridViewTextBoxColumn Column5;
         private Button btnXoa1;
+        private Button btnExportExcel;
     }
 }

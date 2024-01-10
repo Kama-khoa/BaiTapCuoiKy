@@ -69,7 +69,7 @@ namespace DTO
         {
             switch (roleString)
             {
-                case "Quản lý":
+                case "Admin":
                     roleInt = 0;
                     break;
                 case "Nhân viên bán hàng":

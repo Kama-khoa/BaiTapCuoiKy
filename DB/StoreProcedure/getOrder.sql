@@ -1,0 +1,7 @@
+CREATE PROCEDURE getOrder
+
+AS
+BEGIN
+	SELECT *
+	FROM orders;
+END;

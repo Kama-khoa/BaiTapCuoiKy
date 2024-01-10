@@ -31,5 +31,9 @@ namespace DTO
             get { return phone; }
             set { phone = value; }
         }
+        public string toString
+        {
+            get { return id + "/" + name + "/" + phone; }
+        }
     }
 }

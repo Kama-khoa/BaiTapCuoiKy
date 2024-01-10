@@ -8,22 +8,23 @@ namespace DTO
 {
     public class Order
     {
-        private List<Laptop> laptop;
+        
+        private List<Laptop> laptop=new List<Laptop>();
         public List<Laptop> Laptop
         {
             get { return laptop; }
             set { laptop = value; }
         }
 
-        private int order_id;
+        private int id;
 
-        public int Order_id
+        public int ID
         {
-            get { return order_id; }
-            set { order_id = value; }
+            get { return id; }
+            set { id = value; }
         }
 
-        private Customer customer;
+        private Customer customer=new Customer();
 
         public Customer Customer
         {
@@ -31,14 +32,14 @@ namespace DTO
             set { customer = value; }
         }
 
-        private Staff accoutant;
-        public Staff Accoutant
+        private Staff accountant=new Staff();
+        public Staff Accountant
         {
-            get { return accoutant; }
-            set { accoutant = value; }
+            get { return accountant; }
+            set { accountant = value; }
         }
 
-        private Staff seller;
+        private Staff seller=new Staff();
         public Staff Seller
         {
             get { return seller; }
@@ -52,32 +53,32 @@ namespace DTO
             set { order_date = value; }
         }
 
-        private int statusInt = 0;
+        private int statusInt;
         public int StatusInt
         {
             get { return statusInt; }
             set { statusInt = value; setStatusString(); }
         }
 
-        private string statusString = "Chưa thanh toán";
+        private string statusString;
         public string StatusString
         {
             get { return statusString; }
-            set { statusString = value; setPaymentInt(); }
+            set { statusString = value; setStatusInt(); }
         }
 
         private void setStatusString()
         {
             switch (statusInt)
             {
-                case 0:
+                case 1:
                     statusString = "Đang xử lý";
                     break;
-                case 1:
+                case 2:
                     statusString = "Đã thanh toán";
                     break;
-                case 2:
-                    statusString = "Hủy";
+                case 0:
+                    statusString = "Đã hủy";
                     break;
             }
         }
@@ -86,13 +87,13 @@ namespace DTO
             switch (statusString)
             {
                 case "Đang xử lý":
-                    statusInt = 0;
-                    break;
-                case "Đã thanh toán":
                     statusInt = 1;
                     break;
-                case "Hủy":
+                case "Đã thanh toán":
                     statusInt = 2;
+                    break;
+                case "Hủy":
+                    statusInt = 0;
                     break;
             }
         }
@@ -142,6 +143,14 @@ namespace DTO
                     break;
             }
         }
-  
+        public decimal getSUM()
+        {
+            decimal sum = 0;
+            foreach (var item in laptop)
+            {
+                sum += item.QuantityBought * item.Price;
+            }
+            return sum;
+        }
     }
 }
